@@ -16,9 +16,8 @@ import java.util.ArrayList;
  * 类说明：主页面列表适配器
  *
  * @author yh
- *         on 2019/1/8 000819:31
+ * @date 2019/1/8
  */
-
 public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.MyHolder> {
 
     private Context mContext;
