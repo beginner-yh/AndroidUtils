@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.yh.utils.DeviceInfoActivity">
 
-    <TextView
-        android:id="@+id/tv_show_device_info"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_show_device_info"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center" />
+        android:layout_height="wrap_content" />
 </android.support.constraint.ConstraintLayout>
