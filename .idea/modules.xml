@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Yh_Utils.iml" filepath="$PROJECT_DIR$/Yh_Utils.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\Yh_Utils\utils_lib\util_lib.iml" filepath="C:\Users\Administrator\Desktop\Yh_Utils\utils_lib\util_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils_demo/utils_demo.iml" filepath="$PROJECT_DIR$/utils_demo/utils_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils_lib/utils_lib.iml" filepath="$PROJECT_DIR$/utils_lib/utils_lib.iml" />
+    </modules>
+  </component>
+</project>
