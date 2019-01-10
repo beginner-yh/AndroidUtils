@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
         ArrayList<String> mData = new ArrayList<>();
         mData.add("设备信息");
+        mData.add("截屏");
+        mData.add("状态栏修改");
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvMain.setLayoutManager(layoutManager);
         adapter = new MainListAdapter(this, mData);

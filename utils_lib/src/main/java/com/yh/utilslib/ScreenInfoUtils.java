@@ -2,6 +2,7 @@ package com.yh.utilslib;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -107,10 +108,10 @@ public class ScreenInfoUtils {
     public static int getNavigationBarHeight(Context context) {
         Resources resources = context.getResources();
         int resourceId = 0;
-        if (getOrientation(context) == 1) {
+        if (getOrientation(context) == Configuration.ORIENTATION_PORTRAIT) {
             //portrait
             resourceId = resources.getIdentifier("navigation_bar_height", "dimen", "android");
-        } else if (getOrientation(context) == 2) {
+        } else if (getOrientation(context) == Configuration.ORIENTATION_LANDSCAPE) {
             //landscape
             resourceId = resources.getIdentifier("navigation_bar_height_landscape", "dimen", "android");
         }

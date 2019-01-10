@@ -1,6 +1,7 @@
 package com.yh.utilslib;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.provider.Settings;
 
 import static com.yh.utilslib.ScreenInfoUtils.getOrientation;
@@ -31,7 +32,7 @@ public class NavigationBarUtils {
      * 判断NavigationBar是否显示（一般方法）
      */
     private static boolean hasNavigationBarCommon(Context context) {
-        if (getOrientation(context) == 1) {
+        if (getOrientation(context) == Configuration.ORIENTATION_PORTRAIT) {
             //portrait
             return (ScreenInfoUtils.getRealHeight(context) - ScreenInfoUtils.getScreenHeight(context)) > 0;
         } else {
