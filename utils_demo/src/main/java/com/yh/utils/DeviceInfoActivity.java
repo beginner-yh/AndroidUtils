@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import com.yh.utils.adapter.DeviceInfoAdapter;
 import com.yh.utils.bean.BaseItemBean;
 import com.yh.utilslib.ManufacturerInfoUtils;
+import com.yh.utilslib.NavigationBarUtils;
 import com.yh.utilslib.ScreenInfoUtils;
 
 import java.util.ArrayList;
@@ -55,7 +56,7 @@ public class DeviceInfoActivity extends AppCompatActivity {
         mData.add(new BaseItemBean("StatusBar Height", ScreenInfoUtils.getStatusBarHeight(this) + "px"));
         mData.add(new BaseItemBean("NavigationBar Height", ScreenInfoUtils.getNavigationBarHeight(this) + "px"));
         mData.add(new BaseItemBean("刘海屏设备", ""));
-        mData.add(new BaseItemBean("NavigationBar 显示", ""));
+        mData.add(new BaseItemBean("NavigationBar 显示", NavigationBarUtils.hasNavigationBarCompat(this) ? "显示" : "不显示"));
         DeviceInfoAdapter adapter = new DeviceInfoAdapter(this, mData);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvShowDeviceInfo.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
